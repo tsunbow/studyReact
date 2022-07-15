@@ -4,7 +4,7 @@ import { useCounter } from 'src/hooks/useCounter';
 import { useInputArray } from 'src/hooks/useInputArray';
 import { useBgColor } from 'src/hooks/useBgColor';
 
-function MyApp({ Component, pageProps }) {
+const MyApp =({ Component, pageProps }) => {
   const counter = useCounter();
   const inputArray = useInputArray();
   useBgColor();
@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }) {
     <Head>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-      1111111111
       <Component {...pageProps} {...counter} {...inputArray} />
     </>
   ) 
